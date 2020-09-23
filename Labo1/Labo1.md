@@ -31,8 +31,8 @@ This one required a bit more work.
    ```
 3. Now we can call printf, in the beginning of the program printf was stored inside EDI, so we can just call EDI. Don't forget to reset the stack afterward.
     ```asm
-        CALL EDI                    ; call printf
-        ADD ESP,0C                  ; reset stack
+    CALL EDI                    ; call printf
+    ADD ESP,0C                  ; reset stack
     ```
 4. Since we have now done all we want in the program. We just jump to the end.
    ```asm
